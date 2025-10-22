@@ -1,4 +1,5 @@
 # Job Platform API
+![WhatsApp Image 2025-10-22 à 18 54 12_de55bf90](https://github.com/user-attachments/assets/dc3c242f-3bed-42c0-b12c-682b03e7283e)
 
 API Spring Boot complète pour une plateforme d’offres d’emploi (authentification, rôles, offres, candidatures) avec rendu Thymeleaf pour quelques vues web.
 
@@ -24,8 +25,8 @@ API Spring Boot complète pour une plateforme d’offres d’emploi (authentific
 
 ## Installation
 1. Cloner le dépôt
-```bash
-git clone <url-du-repo>
+```
+git clone https://github.com/zorbeur/rikashop_api.git
 cd rikashop-cursor-build-a-complete-job-platform-api-0336
 ```
 2. Configurer la base de données MySQL (un schéma `job_platform` doit exister)
@@ -59,7 +60,7 @@ Variables d’environnement courantes:
 - `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`
 
 ## Lancer l’application
-```bash
+```
 mvn spring-boot:run
 ```
 Puis ouvrir:
