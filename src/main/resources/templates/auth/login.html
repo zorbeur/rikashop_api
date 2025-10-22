@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Connexion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+<main class="container">
+    <h1>Connexion</h1>
+
+    <section>
+        <h2>Se connecter</h2>
+        <form method="post" th:action="@{/login}">
+            <label>Email
+                <input type="email" name="email" required />
+            </label>
+            <label>Mot de passe
+                <input type="password" name="password" required />
+            </label>
+            <button type="submit">Connexion</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Vérifier mon email</h2>
+        <p>Entrez le code à 8 chiffres reçu par email.</p>
+        <form method="post" th:action="@{/verify-email}">
+            <label>Code de vérification
+                <input type="text" name="code" minlength="8" maxlength="8" pattern="\d{8}" placeholder="12345678" required />
+            </label>
+            <button type="submit">Vérifier</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>

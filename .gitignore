@@ -1,0 +1,24 @@
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/
+
+# IDEs
+*.iml
+.idea/
+.project
+.classpath
+.settings/
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+
+# Uploads
+uploads/
+
+# Node (if any frontend assets later)
+node_modules/

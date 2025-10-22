@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Vérification de compte</title>
+</head>
+<body>
+<p>Bonjour <span th:text="${firstName}">Utilisateur</span>,</p>
+<p>Merci de vous être inscrit. Veuillez cliquer sur le lien ci-dessous pour vérifier votre adresse e-mail:</p>
+<p><a th:href="${verifyLink}" th:text="${verifyLink}">Vérifier mon compte</a></p>
+<p>Cordialement,<br/>L'équipe Job Platform</p>
+</body>
+</html>

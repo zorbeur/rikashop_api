@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${offer.title}">Offre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+<main class="container">
+    <a href="/offers">← Retour</a>
+    <h1 th:text="${offer.title}">Titre</h1>
+    <p><strong>Localisation:</strong> <span th:text="${offer.location}">Ville</span></p>
+    <p><strong>Type:</strong> <span th:text="${offer.contractType}">CDI</span></p>
+    <p th:text="${offer.description}">Description</p>
+    <p><strong>Exigences:</strong></p>
+    <pre th:text="${offer.requirements}">-</pre>
+</main>
+</body>
+</html>

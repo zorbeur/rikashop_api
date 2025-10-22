@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Offres d'emploi</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+<main class="container">
+    <h1>Offres d'emploi</h1>
+    <ul>
+        <li th:each="offer : ${offers}">
+            <a th:href="@{'/offers/' + ${offer.id}}" th:text="${offer.title}">Titre</a>
+            <small th:text="${offer.location}">Ville</small>
+        </li>
+    </ul>
+</main>
+</body>
+</html>

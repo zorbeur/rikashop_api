@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <title>Inscription</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+<main class="container">
+    <h1>Inscription</h1>
+    <form method="post" th:action="@{/register}">
+        <label>Prénom
+            <input type="text" name="firstName" required />
+        </label>
+        <label>Nom
+            <input type="text" name="lastName" required />
+        </label>
+        <label>Email
+            <input type="email" name="email" required />
+        </label>
+        <label>Mot de passe
+            <input type="password" name="password" required />
+        </label>
+        <label>Téléphone
+            <input type="text" name="phone" />
+        </label>
+        <label>Rôle
+            <select name="role">
+                <option th:each="r : ${roles}" th:value="${r}" th:text="${r}">CANDIDAT</option>
+            </select>
+        </label>
+        <button type="submit">Créer mon compte</button>
+    </form>
+</main>
+</body>
+</html>

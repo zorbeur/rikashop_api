@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Confirmation de candidature</title>
+</head>
+<body>
+<p>Bonjour <span th:text="${fullName}">Candidat</span>,</p>
+<p>Nous confirmons la bonne réception de votre candidature pour le poste :</p>
+<p><strong th:text="${jobTitle}">Titre du poste</strong></p>
+<ul>
+    <li>Date : <span th:text="${date}">2025-01-01</span></li>
+    <li>Référence : <span th:text="${applicationId}">UUID</span></li>
+    <li>Statut : En attente d'examen</li>
+</ul>
+<p>L'employeur examinera votre profil et vous recontactera si votre candidature retient son attention.</p>
+<p>Cordialement,<br/>L'équipe Job Platform</p>
+</body>
+</html>
